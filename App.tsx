@@ -7,12 +7,14 @@
 
 import React from 'react';
 import {View} from 'react-native';
-import StylingPractice from './components/StylingPractice';
+import MapFunction from './components/Lists/MapFunction';
+// import FlatListsInRN from './components/Lists/FlatListsInRN';
 
 const App = () => {
   return (
     <View>
-      <StylingPractice/>
+      <MapFunction/>
+      {/* <FlatListsInRN/> */}
     </View>
   );
 };
