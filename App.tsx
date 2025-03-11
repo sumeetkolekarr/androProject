@@ -7,14 +7,12 @@
 
 import React from 'react';
 import {View} from 'react-native';
-import MapFunction from './components/Lists/MapFunction';
-// import FlatListsInRN from './components/Lists/FlatListsInRN';
+import SectionListInRN from './components/Lists/SectionListInRN';
 
 const App = () => {
   return (
     <View>
-      <MapFunction/>
-      {/* <FlatListsInRN/> */}
+      <SectionListInRN />
     </View>
   );
 };

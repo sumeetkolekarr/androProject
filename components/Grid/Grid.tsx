@@ -1,7 +1,7 @@
 import React from 'react';
-import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 
-const MapFunction = () => {
+const Grid = () => {
   const users = [
     {
       id: '1',
@@ -54,24 +54,28 @@ const MapFunction = () => {
   ];
   return (
     <View>
-      <Text style={{fontSize: 31}}>List with Map Function</Text>
-      <ScrollView style={{marginBottom: 111}}>
-        {users.map(item => (
-          <Text style={styles.item}>{item.name}</Text>
+      <Text style={{fontSize: 31}}>Grid with Dynamic Data</Text>
+      <View style={{flex: 1, flexDirection: 'row', flexWrap: 'wrap'}}>
+        {users.map(itm => (
+          <Text style={styles.item} key={itm.id}>{itm.name}</Text>
         ))}
-      </ScrollView>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   item: {
-    fontSize: 24,
-    padding: 10,
-    color: 'purple',
-    backgroundColor: 'gold',
-    margin: 10,
+    fontSize: 25,
+    backgroundColor: 'blue',
+    color: '#FFF',
+    margin: 5,
+    padding: 5,
+    width: 120,
+    height: 120,
+    textAlignVertical: 'center',
+    textAlign: 'center',
   },
 });
 
-export default MapFunction;
+export default Grid;
