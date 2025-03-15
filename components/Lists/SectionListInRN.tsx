@@ -20,7 +20,7 @@ const SectionListInRN = () => {
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => <Text style={{ marginLeft: 10 }}>{item}</Text>}
         renderSectionHeader={({ section: { name } }) => (
-          <Text style={{ fontSize: 18, fontWeight: 'bold', backgroundColor: '#ddd', padding: 5 }}>
+          <Text style={{ fontSize: 18, fontWeight: 'bold', backgroundColor: '#ddd', padding: 5, color: 'purple' }}>
             {name}
           </Text>
         )}

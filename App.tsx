@@ -7,12 +7,12 @@
 
 import React from 'react';
 import {View} from 'react-native';
-import SectionListInRN from './components/Lists/SectionListInRN';
+import ClassComponents from './components/Class Components/ClassComponents';
 
 const App = () => {
   return (
     <View>
-      <SectionListInRN />
+      <ClassComponents/>
     </View>
   );
 };
