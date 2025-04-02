@@ -6,14 +6,11 @@
  */
 
 import React from 'react';
-import {View} from 'react-native';
-import ClassComponents from './components/Class Components/ClassComponents';
+import RadioButtons from './components/Components/Radio Buttons/RadioButtons';
 
 const App = () => {
   return (
-    <View>
-      <ClassComponents/>
-    </View>
+    <RadioButtons/>
   );
 };
 
