@@ -6,12 +6,10 @@
  */
 
 import React from 'react';
-import RadioButtons from './components/Components/Radio Buttons/RadioButtons';
+import Stats from './components/Components/StatusBar/Stats';
 
 const App = () => {
-  return (
-    <RadioButtons/>
-  );
+  return <Stats />;
 };
 
 export default App;
