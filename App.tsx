@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import Stats from './components/Components/StatusBar/Stats';
+import Stack from './components/Navigation/Stack Navigation/Stack';
 
 const App = () => {
-  return <Stats />;
+  return < Stack />;
 };
 
 export default App;
