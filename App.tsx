@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import Stack from './components/Navigation/Stack Navigation/Stack';
+import TopTab from './components/Navigation/Tab Navigation/TopTab';
 
 const App = () => {
-  return < Stack />;
+  return < TopTab />;
 };
 
 export default App;
