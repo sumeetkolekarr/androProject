@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import TopTab from './components/Navigation/Tab Navigation/TopTab';
+import PostRequestInUI from './components/API/LocalConnection/POST/PostRequestInUI';
 
 const App = () => {
-  return < TopTab />;
+  return < PostRequestInUI />;
 };
 
 export default App;

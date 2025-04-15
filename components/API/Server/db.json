@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Leo",
+      "age": 1,
+      "email": "leo@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Bunny",
+      "age": 2,
+      "email": "bunny@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Angel",
+      "age": 0,
+      "email": "angel@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "Lucky",
+      "age": 4,
+      "email": "lucky@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "Sk",
+      "email": "sumitkolekar199@gmail.com",
+      "age": 21
+    },
+    {
+      "id": "6",
+      "name": "Sumeet Kolekarr",
+      "email": "sumit.k2022btcseai@srisriuniversity.edu.in",
+      "age": 21
+    }
+  ]
+}
