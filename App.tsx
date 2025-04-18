@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import PostRequestInUI from './components/API/LocalConnection/POST/PostRequestInUI';
+import UseRef from './components/Ref in RN/UseRef';
 
 const App = () => {
-  return < PostRequestInUI />;
+  return <UseRef />;
 };
 
 export default App;

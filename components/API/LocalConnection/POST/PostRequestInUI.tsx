@@ -15,7 +15,7 @@ const PostRequestInUI = () => {
     console.log(name);
     console.log(age);
     console.log(email);
-    const url = 'http://192.168.28.121:3000/users';
+    const url = 'http://10.0.50.3:3000/users';
     let info = await fetch(url);
     let infoRes = await info.json();
     let response = await fetch(url, {

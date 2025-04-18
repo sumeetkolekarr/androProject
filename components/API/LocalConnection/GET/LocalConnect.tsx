@@ -11,7 +11,7 @@ interface PostData {
 const LocalConnect = () => {
   const [data, setData] = useState<PostData[]>([]);
   const getAPIData = async () => {
-    const url = 'http://192.168.28.110:3000/users';
+    const url = 'http://10.0.50.3:3000/users';
     let response = await fetch(url);
     let result = await response.json();
     setData(result);
