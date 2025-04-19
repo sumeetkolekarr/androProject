@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import UseRef from './components/Ref in RN/UseRef';
+import LocalStorage from './components/LocalStorage/LocalStorage';
 
 const App = () => {
-  return <UseRef />;
+  return <LocalStorage />;
 };
 
 export default App;
