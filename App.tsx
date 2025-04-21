@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import LocalStorage from './components/LocalStorage/LocalStorage';
+import ReduxComp from './components/Redux/ReduxComp';
 
 const App = () => {
-  return <LocalStorage />;
+  return <ReduxComp />;
 };
 
 export default App;
