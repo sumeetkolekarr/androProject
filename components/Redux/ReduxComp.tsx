@@ -7,21 +7,21 @@ const ReduxComp = () => {
   const products = [
     {
       name: 'Samsung Mobile',
-      color: 'white',
+      color: 'White',
       price: 92000,
       image:
         'https://images.pexels.com/photos/16149966/pexels-photo-16149966/free-photo-of-get-ready-for-the-future-with-samsung-galaxy-s23.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
     {
       name: 'Apple Mobile',
-      color: 'skyblue',
+      color: 'Sky Blue',
       price: 152000,
       image:
         'https://images.pexels.com/photos/29020349/pexels-photo-29020349/free-photo-of-modern-smartphone-on-wooden-surface.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
     {
       name: 'Sony Xperia',
-      color: 'black',
+      color: 'Black',
       price: 22000,
       image:
         'https://images.pexels.com/photos/2591485/pexels-photo-2591485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
