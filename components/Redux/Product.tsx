@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Button, Image, Text, View} from 'react-native';
-import {addToCart} from './store/action';
+import {addToCart, removeFromCart} from './store/action';
 import {useDispatch, useSelector} from 'react-redux';
 
 interface ProductProps {
@@ -25,14 +25,22 @@ const Product: React.FC<ProductProps> = ({item}) => {
     console.log('Called', item);
     dispatch(addToCart(item));
   };
+  const handleRemoveFromCart = (item: {
+    name: string;
+    color: string;
+    price: number;
+    image: string;
+  }) => {
+    dispatch(removeFromCart(item.name));
+  };
   useEffect(() => {
-    if (cartItems && cartItems.length) {
-      cartItems.forEach((element: any) => {
-        if (element.name === item.name) {
-          setIsAdded(true);
-        }
-        console.log(element);
-      });
+    let result = cartItems.filter((element: {name: string}) => {
+      return element.name === item.name;
+    });
+    if (result.length) {
+      setIsAdded(true);
+    } else {
+      setIsAdded(false);
     }
   }, [cartItems, item.name]);
   return (
@@ -55,12 +63,12 @@ const Product: React.FC<ProductProps> = ({item}) => {
           source={{uri: item.image}}
         />
         {isAdded ? (
-          <Button title="Remove from Cart" onPress={() => handleAddToCart(item)} />
-        ) : (
           <Button
-            title="Add to Cart"
-            onPress={() => handleAddToCart(item)}
+            title="Remove from Cart"
+            onPress={() => handleRemoveFromCart(item)}
           />
+        ) : (
+          <Button title="Add to Cart" onPress={() => handleAddToCart(item)} />
         )}
       </View>
     </View>
